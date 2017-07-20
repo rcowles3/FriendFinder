@@ -1,0 +1,24 @@
+{
+  "name": "friendfinderapp",
+  "version": "1.0.0",
+  "description": "Application that implements Express and deployed on Heroku",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcowles3/Friend-Finder.git"
+  },
+  "author": "Ryan Cowles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcowles3/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/rcowles3/Friend-Finder#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.15.3"
+  }
+}
