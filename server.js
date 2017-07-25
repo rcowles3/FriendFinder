@@ -9,7 +9,6 @@ var bodyParser = require("body-parser");
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
-// This sets up the basic properties for our express server
 // ==============================================================================
 
 // Tells node that we are creating an "express" server
@@ -19,7 +18,6 @@ var app = express();
 var PORT = process.env.PORT || 3030;
 
 // BodyParser makes it possible for our server to interpret data sent to it.
-// The code below is pretty standard.
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
@@ -31,8 +29,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-// require("./app/routing/apiRoutes")(app);
-// require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // ==============================================================================
 // LISTENER
